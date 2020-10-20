@@ -10,6 +10,7 @@ Aplikasi ini berfungsi layaknya aplikasi kasir. menginputkan harga barang / jasa
 
 Diawali dari method `MainWindow` pada `class MainWindwo.xaml.cs` kita mendeklarasikan dengan
 
+
   public partial class MainWindow : Window
     {
         private Calculator calculator;
@@ -23,6 +24,7 @@ Diawali dari method `MainWindow` pada `class MainWindwo.xaml.cs` kita mendeklara
 
 
 logika perhitungan dan penambahan barang disertai total harga pada kasir terdapat di `Calculator.cs`
+
 
  class Calculator
     {
