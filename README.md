@@ -9,8 +9,8 @@ Aplikasi ini berfungsi layaknya aplikasi kasir. menginputkan harga barang / jasa
 ## How Does it Works
 
 Diawali dari method `MainWindow` pada `class MainWindwo.xaml.cs` kita mendeklarasikan dengan
-csharp
- public partial class MainWindow : Window
+
+  public partial class MainWindow : Window
     {
         private Calculator calculator;
 
@@ -18,12 +18,12 @@ csharp
         {
             InitializeComponent();
             calculator = new Calculator();
-            listBox.ItemsSource = calculator.getListItem();
+            listBox.ItemsSource= calculator.getListItem();
         }
 
 
 logika perhitungan dan penambahan barang disertai total harga pada kasir terdapat di `Calculator.cs`
- csharp
+
  class Calculator
     {
         private List<Item> listItem;
@@ -51,4 +51,3 @@ logika perhitungan dan penambahan barang disertai total harga pada kasir terdapa
             return listItem;
         }
     }
-
